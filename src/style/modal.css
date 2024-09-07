@@ -1,0 +1,73 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the modal is on top of everything */
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    max-width: 70%; /* Set a maximum width to prevent overflow */
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: hidden; /* Prevent extra content from spilling out */
+    position: relative; /* This is necessary for the close icon to be positioned absolutely */
+  }
+  
+  .modal-close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 34px; /* Adjust the icon size */
+    cursor: pointer;
+    color: #333; 
+    z-index: 1002; 
+  }
+  
+  .modal-close-icon:hover {
+    color: #ff0000; 
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  .modal button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-images-column {
+    display: flex;
+   
+    align-items: center;
+    gap: 40px; 
+    width: 40%; 
+  }
+  
+  .modal-image {
+    width: 90%; /* Adjust the image width to take up most of the modal */
+    height: auto;
+    border-radius: 20px;
+  }
+  
